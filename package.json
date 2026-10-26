@@ -1,0 +1,24 @@
+{
+  "name": "scopeshield",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ScopeShield — evidence-driven scope-change management for agencies",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w server && npm run build -w web",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "lint": "npm run lint -w server && npm run lint -w web",
+    "test": "npm run test -w server",
+    "test:e2e": "playwright test",
+    "seed": "npm run seed -w server",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "@playwright/test": "^1.49.0"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,22 @@
+/** Model registry — importing this module registers every schema with Mongoose. */
+export { User } from './user.model';
+export { Organization } from './organization.model';
+export { Membership } from './membership.model';
+export { Invitation } from './invitation.model';
+export { Session } from './session.model';
+export { Client } from './client.model';
+export { Project } from './project.model';
+export { BaselineVersion } from './baselineVersion.model';
+export { Document } from './document.model';
+export { ChangeRequest, CHANGE_REQUEST_CATEGORIES, _unusedEvidence, _unusedMoney } from './changeRequest.model';
+export { ScopeAnalysis } from './scopeAnalysis.model';
+export { EffortEstimate } from './effortEstimate.model';
+export { ChangeOrder } from './changeOrder.model';
+export { ApprovalToken } from './approvalToken.model';
+export { ApprovalDecision } from './approvalDecision.model';
+export { TimeEntry } from './timeEntry.model';
+export { Notification } from './notification.model';
+export { AuditEvent } from './auditEvent.model';
+export { AuditChain } from './auditChain.model';
+export { IdempotencyKey } from './idempotencyKey.model';
+export { AiUsage } from './aiUsage.model';
